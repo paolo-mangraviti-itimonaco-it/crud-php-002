@@ -6,20 +6,16 @@
   <body>
     <h1>Inserimento</h1>
     <?php
-        $serverName = "localhost";
-        $IPserver = "127.0.1";
-        $username = "applicazioneWeb";
-        $password = "123456_Web&&";
-        $db = "listaeventi";
+        include "0-0-dbConfig.php";
 
-        $titolo=(isset(is_string($_POST['titoloEvento']))?$_POST['titoloEvento']:"");
-        $descrizione=(isset(is_string($_POST['descrizione']))?$_POST['descrizione']:"");
-        $localita=(isset(is_string($_POST['localita']))?$_POST['localita']:"");
-        $lat=(isset(is_string($_POST['lat']))?$_POST['lat']:"");
-        $lon=(isset(is_string($_POST['lon']))?$_POST['lon']:"");
-        $tipo=(isset(is_string($_POST['r1']))?$_POST['r1']:"");
+        $titolo=((is_string($_POST['titoloEvento']))?$_POST['titoloEvento']:"");
+        $descrizione=((is_string($_POST['descrizione']))?$_POST['descrizione']:"");
+        $localita=((is_string($_POST['loc']))?$_POST['loc']:"");
+        $lat=((is_string($_POST['lat']))?$_POST['lat']:"");
+        $lon=((is_string($_POST['lon']))?$_POST['lon']:"");
+        $tipo=((is_string($_POST['r1']))?$_POST['r1']:"");
         $accesso="";
-        if (isset(is_string($_POST['r3'])))
+        if ((is_string($_POST['r3'])))
             { foreach($_POST['r3'] as $voce){ $accesso .= $voce.":"; } }
         
 
