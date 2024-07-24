@@ -6,7 +6,7 @@
   <body>
     <h1>Risultato Ricerca</h1>
     <?php
-		include "0-0-dbConfig.php";
+	include "0-0-dbConfig.php";
 		
         $titolo=((is_string($_POST['titoloEvento']))?$_POST['titoloEvento']:"")."%";
         $localita=((is_string($_POST['loc']))?$_POST['loc']:"")."%";
@@ -24,9 +24,9 @@
 
         mysqli_stmt_bind_param($istruzioneSQL,"ssss",$titolo,$localita,$tipo, $accesso);
 		
-		mysqli_stmt_execute($istruzioneSQL);
+	mysqli_stmt_execute($istruzioneSQL);
         
-		$risultato = mysqli_stmt_get_result($istruzioneSQL);
+	$risultato = mysqli_stmt_get_result($istruzioneSQL);
 
         // Visualizzazione del risultato della query
         if (mysqli_num_rows($risultato) > 0) 
