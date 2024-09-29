@@ -23,6 +23,7 @@
 				<input type="checkbox" value="prenotazione" name="r3[]" id="r3_2"><label for="r3_2">Prenotazione</label><br>
 				<input type="checkbox" value="biglietto" name="r3[]" id="r3_3"><label for="r3_3">Biglietto</label><br>
 				<input type="checkbox" value="%" name="r3[]" id="r3_4"><label for="r3_4">Tutti</label><br>
+			</fieldset>
 			<input type="submit" value="Ricerca">
 		</form>
 	</body>
