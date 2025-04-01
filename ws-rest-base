@@ -1,0 +1,50 @@
+<?php  
+    header('Content-Type: application/xml');      // response header
+    header('');                                   // response header
+    header('');                                   // response header
+/*
+  Info sulla HTTP-REQUEST
+
+  $_SERVER["SERVER_PROTOCOL"]
+  $_SERVER["REQUEST_TIME"]
+  $_SERVER["REMOTE_ADDR"]
+  $_SERVER["REMOTE_HOST"]
+  $_SERVER["REMOTE_PORT"]
+
+  getallheaders() — restituisce un array associativo con gli HTTP request headers
+
+*/
+
+        switch ($_SERVER["REQUEST_METHOD"])
+        {
+            case "GET":
+                // Trattamento della GET
+                break;
+            case "POST":
+                // Trattamento della POST
+                break;
+            case "HEAD":
+                // Trattamento della HEAD
+                break;
+            case "PUT":
+                // Trattamento della PUT    -    sostituzione o creazione di una risorsa
+                break;
+            case "OPTIONS":
+                // Trattamento della OPTIONS
+                break;
+            case "PATCH":
+                // Trattamento della PATCH    -    modifica di una risorsa
+                break;
+            case "DELETE":
+                // Trattamento della DELETE
+                break;
+            case "TRACE":
+                // Trattamento della TRACE
+                break;
+            default:
+                break;
+        }
+
+    // Altro codice
+
+?>
