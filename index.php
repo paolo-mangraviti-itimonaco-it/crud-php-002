@@ -9,6 +9,7 @@
 		<ol>
 			<li><a href="1-1-formInserimento.php">(Create) Inserimento Evento</a></li>
 			<li><a href="2-1-formRicerca.php">(Read) Visualizzazione Evento</a></li>
+			<li><a href="2-3-formRicerca.php">(Read) Visualizzazione Evento in formato XML</a></li>
 			<li><a href="3-1-ricercaMassiva.php">(Read) Visualizzazione (tutti i dati)</a></li>
 			<li><a href="4-1-formRicercaPreModifica.php">(Update) Modifica Evento</a></li>
 			<li><a href="5-1-formRicercaPreCancella.php">(Delete) Cancellazione Evento</a></li>
