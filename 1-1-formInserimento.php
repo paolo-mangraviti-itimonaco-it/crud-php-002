@@ -21,9 +21,9 @@
 				<input type="radio" name="r1" id="r1_2" value="teatro"><label for="r1_2">Teatro</label><br>
 				<input type="radio" name="r1" id="r1_3" value="sport"><label for="r1_3">Sport</label>
 				<br><br>
-				<input type="checkbox" value="libero" name="r3[]" id="r3_1"><label for="r3_1">Libero</label><br>
-				<input type="checkbox" value="prenotazione" name="r3[]" id="r3_2"><label for="r3_2">Prenotazione</label><br>
-				<input type="checkbox" value="biglietto" name="r3[]" id="r3_3"><label for="r3_3">Biglietto</label><br>
+				<input type="checkbox" value="libero" name="r3" id="r3_1"><label for="r3_1">Libero</label><br>
+				<input type="checkbox" value="prenotazione" name="r3" id="r3_2"><label for="r3_2">Prenotazione</label><br>
+				<input type="checkbox" value="biglietto" name="r3" id="r3_3"><label for="r3_3">Biglietto</label><br>
 			</fieldset>
 			<fieldset>
 				<legend>Coordinate</legend>

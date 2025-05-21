@@ -11,7 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -41,23 +40,11 @@ CREATE TABLE `eventi` (
   `lon` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Indici per le tabelle scaricate
---
 
---
--- Indici per le tabelle `eventi`
---
 ALTER TABLE `eventi`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT per le tabelle scaricate
---
 
---
--- AUTO_INCREMENT per la tabella `eventi`
---
 ALTER TABLE `eventi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;

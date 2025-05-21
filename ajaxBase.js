@@ -24,3 +24,4 @@ function GetAsincPageInIDelement(address,idElement)
                           document.getElementById(idElement).innerHTML = xmlHttp.responseText;
                     };
 }
+

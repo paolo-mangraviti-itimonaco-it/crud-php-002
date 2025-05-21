@@ -10,7 +10,8 @@
         
         $titolo=((is_string($_POST['titoloEvento']))?$_POST['titoloEvento']:"")."%";
         $localita=((is_string($_POST['loc']))?$_POST['loc']:"")."%";
-        $tipo="%".((is_string($_POST['r1']))?$_POST['r1']:"")."%";
+        $tipo="";
+        if (isset($_POST['r1'])) { foreach($_POST['r1'] as $voce){ $tipo .= $voce."%"; } }
         $accesso="";
         if (isset($_POST['r3'])) { foreach($_POST['r3'] as $voce){ $accesso .= $voce."%"; } }
         $accesso.="%";
